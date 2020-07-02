@@ -1,0 +1,292 @@
+$header_height: 800px;
+$section_head_font_family: Amatic SC;
+$text_font_family: Roboto;
+
+body{	
+	background-color: #FFE3C8;
+}
+
+@media screen {
+	#header{
+		height: $header_height;
+		max-height: $header_height;
+		background-image: url(img/main_top.jpg);
+		background-origin: content-box;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	#logo-div{
+		margin-top: 50px;
+	}
+	#main-menu-btn-div{
+		display:none;
+	}
+	#small-screen-girl{
+		display: none;
+	}
+	#logo{
+		font-family: $section_head_font_family;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		line-height: 50px;
+		letter-spacing: 0.13em;
+
+		color: #bfdfff;
+	}
+	.logo-first-letter{
+		
+		color: #FFE3C8;
+	}
+	.margin-left-15px{
+		left: 15px;
+	}
+	.margin-right-15px{
+		
+	    right: 15px;
+	}
+	
+}
+@media screen and (max-width: 600px){
+	body{	
+		min-width: 500px;
+	}
+	#header{
+		background-image: none;
+	}
+	#sign-row{
+		display: none;
+	}
+	
+	#logo{
+		font-family: $section_head_font_family;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 80px;
+		line-height: 50px;
+		letter-spacing: 0.13em;
+	}
+	
+	#main-links-div{
+		display: none;
+	}
+	#main-menu-btn-div{
+		display:block;
+		position: absolute;
+		margin-left: 80%;
+		margin-top: -60px;
+	}
+	#small-screen-girl{
+		display: block;
+	}
+	.logo-first-letter{
+		
+		color: #303030;
+	}
+	
+	.col-custom-shift{
+		
+		display: none;
+	}
+	.logo-text{
+		
+		color: blue;
+	}
+	.margin-left-15px{
+
+		left: 10;
+		margin-left: 0;
+	}
+	.margin-right-15px{
+		left: 15px;
+		right: 0;
+		margin-right: 0;
+	}
+}
+
+
+#sign{
+	font-family: $section_head_font_family;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 63px;
+	letter-spacing: 0.05em;
+	color: #bfdfff;
+}
+#portfolio{
+	background-image: url(img/marker-bg.png);
+}
+#about-me-div{
+	
+	
+	width: 100%;
+	text-align: center;
+}
+#about-me-div {
+	
+	p{
+		font-family: $text_font_family;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 150.7%;
+		/* or 27px */
+		text-align: center;
+		color: #303030;
+	}
+	
+}
+#girl-div{
+	background-image: url(img/girl.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-width: 263px;
+	min-height: 315px;
+}
+#portfolio-head-left{
+	background-color: white;
+	text-align: center;
+}
+#portfolio-head-left{
+	
+	h1{
+		margin-top: 150px;
+	}
+	
+}
+#portfolio-head-right{
+	text-align: center;
+}
+#portfolio-head-right{
+	
+	img{
+		
+		margin-top: 150px;
+	}
+	
+}
+.img-sign{
+	font-family: $text_font_family;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #303030;
+}
+.img-text{
+	font-family: $text_font_family;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 150.7%;
+	/* or 27px */
+
+	text-align: center;
+}
+
+.img-shadow{
+	width: 560px;
+	height: 350px;
+	position: absolute;
+}
+.img-shadow {
+	h6{
+		font-family: $text_font_family;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 23px;
+		text-align: center;
+		margin-top: 25%;
+		color: #FFE3C8;
+		display: none;
+	}
+	
+}
+.img-shadow{
+	p{
+		font-family: $text_font_family;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 150.69%;
+		/* or 24px */
+		text-align: center;
+		color: #FFE3C8;
+		display: none;	
+	}
+}
+
+.img-shadow:hover{
+	p{
+		display: block;
+	}
+}
+.img-shadow:hover{
+	h6{
+		display: block;
+	}
+}
+.img-shadow:hover{
+	background-color:black;
+	opacity: 0.8;
+}
+.section-start-h1{
+	font-family: $section_head_font_family;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 63px;
+	letter-spacing: 0.11em;
+
+	color: #303030;
+}
+.waves{
+	background-image: url(img/about-me-div.png);
+	background-size:cover;
+	min-height: 200px;
+	width: 100%;
+	text-align: center;
+}
+.main-site-container{
+	display: flex;
+	align-content: center;
+}
+.main-links{
+	margin-left: 150px;
+	font-weight: 500;
+	font-family: $text_font_family;
+	font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.main-links:hover{
+	color: #FFE3C8;
+}
+.portfolio-links{
+	color: black;
+	margin-left: 20px;
+	font-family: $text_font_family;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 150.7%;
+	color: #303030;
+}
+.portfolio-links:hover{
+	text-decoration: underline;
+}
+.main-text{
+	color: #fbecde;
+}
+.icon-arrow-down{
+	fill: #FFE3C8;
+}
+.link_imitation:hover{
+	cursor: pointer;
+}
